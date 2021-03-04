@@ -11,6 +11,26 @@
 			<div><img src="../assets/leaves3.png" alt="7" /></div>
 			<div><img src="../assets/leaves4.png" alt="8" /></div>
 		</div>
+		<div class="set set2">
+			<div><img src="../assets/leaves1.png" alt="1" /></div>
+			<div><img src="../assets/leaves2.png" alt="2" /></div>
+			<div><img src="../assets/leaves3.png" alt="3" /></div>
+			<div><img src="../assets/leaves4.png" alt="4" /></div>
+			<div><img src="../assets/leaves1.png" alt="5" /></div>
+			<div><img src="../assets/leaves2.png" alt="6" /></div>
+			<div><img src="../assets/leaves3.png" alt="7" /></div>
+			<div><img src="../assets/leaves4.png" alt="8" /></div>
+		</div>
+		<div class="set set3">
+			<div><img src="../assets/leaves1.png" alt="1" /></div>
+			<div><img src="../assets/leaves2.png" alt="2" /></div>
+			<div><img src="../assets/leaves3.png" alt="3" /></div>
+			<div><img src="../assets/leaves4.png" alt="4" /></div>
+			<div><img src="../assets/leaves1.png" alt="5" /></div>
+			<div><img src="../assets/leaves2.png" alt="6" /></div>
+			<div><img src="../assets/leaves3.png" alt="7" /></div>
+			<div><img src="../assets/leaves4.png" alt="8" /></div>
+		</div>
 	</section>
 </template>
 
@@ -113,5 +133,14 @@ section .set div:nth-child(8) {
 		top: 110%;
 		transform: translateX(-20px) rotate(225deg);
 	}
+}
+
+.set2 {
+	transform: scale(2) rotateY(180deg);
+	filter: blur(2px);
+}
+.set3 {
+	transform: scale(0.8) rotateX(180deg);
+	filter: blur(4px);
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
 	<section>
-		<h2>Falling Snowflake</h2>
+		<h2>Falling Snowflakes</h2>
 		<div class="set">
 			<div><img src="../assets/floco1.png" alt="1" /></div>
 			<div><img src="../assets/floco2.png" alt="2" /></div>
@@ -10,14 +10,46 @@
 			<div><img src="../assets/floco2.png" alt="6" /></div>
 			<div><img src="../assets/floco3.png" alt="7" /></div>
 			<div><img src="../assets/floco4.png" alt="8" /></div>
-			<div><img src="../assets/floco1.png" alt="9" /></div>
-			<div><img src="../assets/floco2.png" alt="10" /></div>
-			<div><img src="../assets/floco3.png" alt="11" /></div>
-			<div><img src="../assets/floco4.png" alt="12" /></div>
-			<div><img src="../assets/floco1.png" alt="13" /></div>
-			<div><img src="../assets/floco2.png" alt="14" /></div>
-			<div><img src="../assets/floco3.png" alt="15" /></div>
-			<div><img src="../assets/floco4.png" alt="16" /></div>
+		</div>
+		<div class="set set2">
+			<div><img src="../assets/floco1.png" alt="1" /></div>
+			<div><img src="../assets/floco2.png" alt="2" /></div>
+			<div><img src="../assets/floco3.png" alt="3" /></div>
+			<div><img src="../assets/floco4.png" alt="4" /></div>
+			<div><img src="../assets/floco1.png" alt="5" /></div>
+			<div><img src="../assets/floco2.png" alt="6" /></div>
+			<div><img src="../assets/floco3.png" alt="7" /></div>
+			<div><img src="../assets/floco4.png" alt="8" /></div>
+		</div>
+		<div class="set set3">
+			<div><img src="../assets/floco1.png" alt="1" /></div>
+			<div><img src="../assets/floco2.png" alt="2" /></div>
+			<div><img src="../assets/floco3.png" alt="3" /></div>
+			<div><img src="../assets/floco4.png" alt="4" /></div>
+			<div><img src="../assets/floco1.png" alt="5" /></div>
+			<div><img src="../assets/floco2.png" alt="6" /></div>
+			<div><img src="../assets/floco3.png" alt="7" /></div>
+			<div><img src="../assets/floco4.png" alt="8" /></div>
+		</div>
+		<div class="set set4">
+			<div><img src="../assets/floco1.png" alt="1" /></div>
+			<div><img src="../assets/floco2.png" alt="2" /></div>
+			<div><img src="../assets/floco3.png" alt="3" /></div>
+			<div><img src="../assets/floco4.png" alt="4" /></div>
+			<div><img src="../assets/floco1.png" alt="5" /></div>
+			<div><img src="../assets/floco2.png" alt="6" /></div>
+			<div><img src="../assets/floco3.png" alt="7" /></div>
+			<div><img src="../assets/floco4.png" alt="8" /></div>
+		</div>
+		<div class="set set5">
+			<div><img src="../assets/floco1.png" alt="1" /></div>
+			<div><img src="../assets/floco2.png" alt="2" /></div>
+			<div><img src="../assets/floco3.png" alt="3" /></div>
+			<div><img src="../assets/floco4.png" alt="4" /></div>
+			<div><img src="../assets/floco1.png" alt="5" /></div>
+			<div><img src="../assets/floco2.png" alt="6" /></div>
+			<div><img src="../assets/floco3.png" alt="7" /></div>
+			<div><img src="../assets/floco4.png" alt="8" /></div>
 		</div>
 	</section>
 </template>
@@ -59,7 +91,7 @@ section .set div {
 	display: block;
 }
 section .set div img {
-	width: 25%;
+	width: 10%;
 }
 section .set div:nth-child(1) {
 	left: 20%;
@@ -99,44 +131,6 @@ section .set div:nth-child(8) {
 	animation: animate 15s linear infinite;
 }
 
-section .set div:nth-child(9) {
-	left: 20%;
-	animation: animate 15s linear infinite;
-	animation-delay: -7s;
-}
-section .set div:nth-child(10) {
-	left: 50%;
-	animation: animate 20s linear infinite;
-	animation-delay: -5s;
-}
-section .set div:nth-child(11) {
-	left: 70%;
-	animation: animate 20s linear infinite;
-	animation-delay: 0s;
-}
-section .set div:nth-child(12) {
-	left: 0%;
-	animation: animate 15s linear infinite;
-	animation-delay: -5s;
-}
-section .set div:nth-child(13) {
-	left: 85%;
-	animation: animate 18s linear infinite;
-	animation-delay: -10s;
-}
-section .set div:nth-child(14) {
-	left: 0%;
-	animation: animate 12s linear infinite;
-}
-section .set div:nth-child(15) {
-	left: 15%;
-	animation: animate 14s linear infinite;
-}
-section .set div:nth-child(16) {
-	left: 60%;
-	animation: animate 15s linear infinite;
-}
-
 @keyframes animate {
 	0% {
 		opacity: 0;
@@ -162,5 +156,21 @@ section .set div:nth-child(16) {
 		top: 110%;
 		transform: translateX(-20px) rotate(225deg);
 	}
+}
+.set2 {
+	transform: scale(2) rotateY(180deg);
+	filter: blur(2px);
+}
+.set3 {
+	transform: scale(0.8) rotateX(180deg);
+	filter: blur(4px);
+}
+.set4 {
+	transform: scale(1.5) rotateY(180deg);
+	filter: blur(1px);
+}
+.set5 {
+	transform: scale(0.3) rotateX(180deg);
+	filter: blur(3px);
 }
 </style>
